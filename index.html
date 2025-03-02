@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pacific Trails Resort</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #142a5c;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .hero-image {
+            width: 100%;
+            height: auto;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+        .side-tab {
+            background-color: #e8eef4;
+            flex: 1;
+            min-width: 200px;
+            max-width: 250px;
+            padding: 15px;
+        }
+
+        .side-tab a {
+            display: block;
+            color: #142a5c;
+            text-decoration: none;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .content {
+            flex: 2;
+            padding: 20px;
+            min-width: 300px;
+        }
+
+        .content h2 {
+            color: #142a5c;
+        }
+
+        .content ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .content ul li {
+            margin-bottom: 10px;
+        }
+
+        footer {
+            background-color: #142a5c;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            font-size: 14px;
+        }
+
+        footer a {
+            color: #d9d9d9;
+            text-decoration: none;
+        }
+
+        /* Medium display styling */
+        @media (max-width: 1024px) {
+            .container {
+                flex-direction: column;
+            }
+
+            .side-tab {
+                max-width: 100%;
+                text-align: center;
+            }
+
+            .side-tab a {
+                margin-bottom: 5px;
+            }
+
+            .content {
+                padding: 15px;
+            }
+
+            .hero-image {
+                height: auto;
+                max-height: 400px;
+            }
+        }
+
+        /* Small display (mobile) styling */
+        @media (max-width: 768px) {
+            header {
+                font-size: 20px;
+                padding: 15px;
+            }
+
+            .side-tab {
+                padding: 10px;
+            }
+
+            .content {
+                padding: 10px;
+            }
+
+            footer {
+                font-size: 12px;
+                padding: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        Pacific Trails Resort
+    </header>
+
+    <div class="container">
+        <div class="side-tab">
+        <a href="index.html">Home</a>
+        <a href="classes.html">Classes</a>
+        <a href="schedule.html">Schedule</a>
+        <a href="contact.html">Contact</a>
+        <a href="shop.html">Shop</a>
+        </div>
+
+        <div class="content">
+            <img class="hero-image" src="beach.jpg" alt="Scenic beach view">
+
+            <h2>Enjoy Nature in Luxury</h2>
+            <p>
+                Pacific Trails Resort on the California North Coast offers panoramic views of the Pacific Ocean. Our guests experience an opulent camping adventure in sumptuously appointed private yurts featuring a gas fireplace, king-size bed, and private deck.
+            </p>
+            <ul>
+                <li>Unwind in the heated outdoor pool and whirlpool</li>
+                <li>Explore the coast on your own or join our guided tours</li>
+                <li>Start the day with a complimentary cooked-to-order breakfast</li>
+                <li>Relax in our lodge while enjoying complimentary appetizers and beverages</li>
+                <li>Savor nightly fine dining with an ocean view</li>
+            </ul>
+
+            <address>
+                <strong>Pacific Trails Resort</strong><br>
+                12456 Pacific Trails Road<br>
+                Zephyr, CA 95555<br>
+                888-555-5555
+            </address>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2020 Pacific Trails Resort | <a href="mailto:yourfirstname@yourlastname.com">yourfirstname@yourlastname.com</a>
+    </footer>
+</body>
+</html>
